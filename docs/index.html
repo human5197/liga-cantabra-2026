@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liga Cántabra de Pádel 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green:       #1a7a3c;
+      --green-light: #24a352;
+      --green-bg:    #e8f5ed;
+      --gold:        #c8a000;
+      --silver:      #888;
+      --pending-bg:  #fff8e1;
+      --pending-txt: #7a5a00;
+      --played-bg:   #e8f5ed;
+      --played-txt:  #1a5c2c;
+      --radius:      8px;
+      --shadow:      0 2px 8px rgba(0,0,0,.1);
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: #f4f6f4;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--green);
+      color: #fff;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    header .logo { font-size: 2rem; }
+    header h1 { font-size: 1.25rem; font-weight: 700; line-height: 1.2; }
+    header p  { font-size: .8rem; opacity: .8; margin-top: 2px; }
+
+    /* ── Tabs ── */
+    .tabs {
+      background: var(--green);
+      display: flex;
+      padding: 0 24px;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .tab {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,.65);
+      padding: 10px 20px;
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: color .15s, border-color .15s;
+    }
+    .tab:hover { color: #fff; }
+    .tab.active { color: #fff; border-bottom-color: #fff; }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      background: #fff;
+      border-bottom: 2px solid var(--green-bg);
+      padding: 18px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-end;
+    }
+    .filter-group { display: flex; flex-direction: column; gap: 4px; }
+    .filter-group.hidden { display: none; }
+    .filter-group label { font-size: .75rem; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: .05em; }
+    select {
+      padding: 8px 32px 8px 12px;
+      border: 1.5px solid #cdd8cf;
+      border-radius: var(--radius);
+      font-size: .95rem;
+      background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0l6 8 6-8z' fill='%231a7a3c'/%3E%3C/svg%3E") no-repeat right 10px center;
+      appearance: none;
+      cursor: pointer;
+      min-width: 180px;
+      color: #1a1a1a;
+    }
+    select:disabled { background-color: #f0f0f0; color: #999; cursor: not-allowed; }
+    select:focus { outline: none; border-color: var(--green); }
+
+    /* ── Main content ── */
+    main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+    .placeholder {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+    }
+    .placeholder .icon { font-size: 3rem; margin-bottom: 12px; }
+    .placeholder p { font-size: 1.05rem; }
+
+    /* ── Section headers ── */
+    .section { margin-bottom: 32px; }
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-left: 4px solid var(--green);
+      padding-left: 10px;
+      margin-bottom: 14px;
+    }
+    .group-label {
+      font-size: .85rem;
+      color: #555;
+      margin-bottom: 16px;
+      margin-left: 14px;
+    }
+
+    /* ── Calendar / match cards ── */
+    .matches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px;
+    }
+    .match-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .match-card.highlight {
+      border-left: 4px solid var(--green);
+      background: #f0faf4;
+    }
+    .match-teams {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .team { flex: 1; font-size: .88rem; font-weight: 500; line-height: 1.3; }
+    .team.local  { text-align: right; }
+    .team.visit  { text-align: left; }
+    .team.my-team { color: var(--green); font-weight: 700; }
+    .vs { font-size: .75rem; color: #999; flex-shrink: 0; }
+
+    .match-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2px;
+    }
+    .badge {
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+    }
+    .badge.jugado   { background: var(--played-bg);  color: var(--played-txt); }
+    .badge.pendiente{ background: var(--pending-bg); color: var(--pending-txt); }
+    .badge.unknown  { background: #eee; color: #666; }
+
+    .score {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: .05em;
+    }
+    .match-date {
+      font-size: .8rem;
+      color: var(--pending-txt);
+    }
+    .result-link {
+      font-size: .75rem;
+      color: var(--green-light);
+      text-decoration: none;
+    }
+    .result-link:hover { text-decoration: underline; }
+
+    /* ── Standings table ── */
+    .standings-wrapper { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      font-size: .88rem;
+    }
+    thead th {
+      background: var(--green);
+      color: #fff;
+      padding: 10px 12px;
+      text-align: center;
+      font-weight: 600;
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+    thead th:first-child, thead th:nth-child(2) { text-align: left; }
+    tbody tr { border-bottom: 1px solid #eef2ee; transition: background .15s; }
+    tbody tr:hover { background: #f6faf7; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td { padding: 10px 12px; text-align: center; }
+    tbody td:nth-child(2) { text-align: left; font-weight: 500; }
+    tbody td:first-child { font-weight: 700; color: var(--green); width: 36px; }
+
+    /* Promotion zones */
+    tbody tr.pos-1 td:first-child { color: var(--gold); }
+    tbody tr.pos-2 td:first-child { color: var(--silver); }
+    tbody tr.promo { background: linear-gradient(90deg, #fffbe6 0%, #fff 60px); }
+    tbody tr.promo:hover { background: linear-gradient(90deg, #fff3cc 0%, #f6faf7 60px); }
+    tbody tr.my-team-row { background: #e8f5ed !important; outline: 2px solid var(--green); outline-offset: -2px; }
+    tbody tr.my-team-row:hover { background: #d4eedd !important; }
+
+    /* ── Por Fecha view ── */
+    .fecha-bucket { margin-bottom: 28px; }
+    .fecha-header {
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--green);
+      padding: 8px 14px;
+      background: var(--green-bg);
+      border-radius: var(--radius) var(--radius) 0 0;
+      border-left: 4px solid var(--green);
+    }
+    .fecha-table {
+      border-radius: 0 0 var(--radius) var(--radius);
+    }
+    .fecha-table thead th { font-size: .75rem; }
+    .fecha-table td { padding: 8px 12px; font-size: .86rem; }
+    .grupo-badge {
+      display: inline-block;
+      background: var(--green);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .fecha-table td:first-child { text-align: left; width: 100px; }
+    .fecha-table td:nth-child(2) { text-align: right; font-weight: 500; }
+    .fecha-table td:nth-child(4) { text-align: left; font-weight: 500; }
+    .fecha-table td:nth-child(3) { text-align: center; color: #999; font-size: .75rem; width: 30px; }
+    .fecha-table td:last-child    { text-align: center; width: 90px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1rem; }
+      .tabs { padding: 0 12px; }
+      .tab { padding: 10px 14px; font-size: .82rem; }
+      .filter-bar { flex-direction: column; }
+      select { min-width: 100%; }
+      main { padding: 16px; }
+      .matches-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🏓</div>
+  <div>
+    <h1>Liga Cántabra de Pádel 2026</h1>
+    <p>Calendarios y clasificaciones oficiales</p>
+  </div>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-view="grupo">Por Grupo</button>
+  <button class="tab" data-view="fecha">Por Fecha</button>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-group" id="fg-genero">
+    <label for="sel-genero">Género</label>
+    <select id="sel-genero">
+      <option value="">— Selecciona —</option>
+      <option value="F">Femenino</option>
+      <option value="M">Masculino</option>
+    </select>
+  </div>
+  <div class="filter-group" id="fg-categoria">
+    <label for="sel-categoria">Categoría</label>
+    <select id="sel-categoria" disabled>
+      <option value="">— Primero selecciona género —</option>
+    </select>
+  </div>
+  <div class="filter-group" id="fg-grupo">
+    <label for="sel-grupo">Grupo</label>
+    <select id="sel-grupo" disabled>
+      <option value="">— Primero selecciona categoría —</option>
+    </select>
+  </div>
+  <div class="filter-group hidden" id="fg-equipo">
+    <label for="sel-equipo">Equipo</label>
+    <select id="sel-equipo">
+      <option value="">— Todos los equipos —</option>
+    </select>
+  </div>
+</div>
+
+<main id="main-content">
+  <div class="placeholder">
+    <div class="icon">🏓</div>
+    <p>Selecciona género, categoría y grupo para ver el calendario y la clasificación.</p>
+  </div>
+</main>
+
+<script>
+  let DATA = null;
+  let currentView = 'grupo';
+
+  async function loadData() {
+    try {
+      const resp = await fetch('liga_cantabra_2026.json');
+      if (!resp.ok) throw new Error('fetch failed');
+      DATA = await resp.json();
+    } catch (e) {
+      document.getElementById('main-content').innerHTML =
+        '<div class="placeholder"><div class="icon">⚠️</div>' +
+        '<p>No se pudo cargar el archivo de datos.<br>Abre la página desde un servidor local:<br>' +
+        '<code>python -m http.server 8000</code> y visita <code>http://localhost:8000</code></p></div>';
+    }
+  }
+
+  // ── Helpers ──────────────────────────────────────────────
+
+  function getGrupos() { return DATA ? DATA.grupos : {}; }
+
+  function ordinalCat(n) { return n + 'ª Categoría'; }
+
+  const MONTHS = {ene:0,feb:1,mar:2,abr:3,may:4,jun:5,jul:6,ago:7,sep:8,oct:9,nov:10,dic:11};
+  function parseFecha(txt) {
+    if (!txt) return null;
+    const m = txt.match(/(\d{1,2})\s+(Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic)/i);
+    if (!m) return null;
+    return new Date(2026, MONTHS[m[2].toLowerCase()], parseInt(m[1]));
+  }
+
+  function escHtml(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  }
+
+  // ── Tabs ─────────────────────────────────────────────────
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      if (tab.dataset.view === currentView) return;
+      currentView = tab.dataset.view;
+      document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab));
+
+      const fgGrupo  = document.getElementById('fg-grupo');
+      const fgEquipo = document.getElementById('fg-equipo');
+
+      if (currentView === 'fecha') {
+        fgGrupo.classList.add('hidden');
+        fgEquipo.classList.add('hidden');
+        // If género+categoría already selected, render immediately
+        const genero    = selGenero.value;
+        const categoria = parseInt(selCategoria.value);
+        if (genero && categoria) renderVistaFecha(genero, categoria);
+        else clearContent(false);
+      } else {
+        fgGrupo.classList.remove('hidden');
+        // Restore grupo dropdown state
+        const grupoId = selGrupo.value;
+        if (grupoId) {
+          fgEquipo.classList.remove('hidden');
+          renderGroup(grupoId, selEquipo.value);
+        } else {
+          clearContent(true);
+        }
+      }
+    });
+  });
+
+  // ── Dropdowns ────────────────────────────────────────────
+
+  const selGenero    = document.getElementById('sel-genero');
+  const selCategoria = document.getElementById('sel-categoria');
+  const selGrupo     = document.getElementById('sel-grupo');
+  const selEquipo    = document.getElementById('sel-equipo');
+
+  selGenero.addEventListener('change', () => {
+    const genero = selGenero.value;
+    selCategoria.innerHTML = '';
+    selGrupo.innerHTML = '';
+    selCategoria.disabled = !genero;
+    selGrupo.disabled = true;
+    document.getElementById('fg-equipo').classList.add('hidden');
+    clearContent(currentView === 'grupo');
+
+    if (!genero) {
+      selCategoria.innerHTML = '<option value="">— Primero selecciona género —</option>';
+      selGrupo.innerHTML     = '<option value="">— Primero selecciona categoría —</option>';
+      return;
+    }
+
+    const cats = new Set();
+    Object.values(getGrupos()).forEach(g => {
+      if (g.info.genero === genero) cats.add(g.info.categoria);
+    });
+
+    selCategoria.innerHTML = '<option value="">— Selecciona categoría —</option>';
+    [...cats].sort((a,b)=>a-b).forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = ordinalCat(c);
+      selCategoria.appendChild(opt);
+    });
+    selGrupo.innerHTML = '<option value="">— Primero selecciona categoría —</option>';
+  });
+
+  selCategoria.addEventListener('change', () => {
+    const genero    = selGenero.value;
+    const categoria = parseInt(selCategoria.value);
+    document.getElementById('fg-equipo').classList.add('hidden');
+
+    if (currentView === 'grupo') {
+      selGrupo.innerHTML = '';
+      selGrupo.disabled  = !categoria;
+      clearContent(true);
+
+      if (!categoria) {
+        selGrupo.innerHTML = '<option value="">— Primero selecciona categoría —</option>';
+        return;
+      }
+
+      const groups = Object.entries(getGrupos()).filter(([,g]) =>
+        g.info.genero === genero && g.info.categoria === categoria
+      ).sort(([,a],[,b]) => a.info.grupo.localeCompare(b.info.grupo));
+
+      selGrupo.innerHTML = '<option value="">— Selecciona grupo —</option>';
+      groups.forEach(([id, g]) => {
+        const opt = document.createElement('option');
+        opt.value = id;
+        opt.textContent = 'Grupo ' + g.info.grupo;
+        selGrupo.appendChild(opt);
+      });
+    } else {
+      // Por Fecha mode
+      if (genero && categoria) renderVistaFecha(genero, categoria);
+      else clearContent(false);
+    }
+  });
+
+  selGrupo.addEventListener('change', () => {
+    const grupoId = selGrupo.value;
+    const fgEquipo = document.getElementById('fg-equipo');
+
+    if (!grupoId) {
+      fgEquipo.classList.add('hidden');
+      clearContent(true);
+      return;
+    }
+
+    // Populate team filter
+    const g = DATA.grupos[grupoId];
+    const teams = new Set();
+    (g.partidos || []).forEach(p => {
+      teams.add(p.equipo_local);
+      teams.add(p.equipo_visitante);
+    });
+    selEquipo.innerHTML = '<option value="">— Todos los equipos —</option>';
+    [...teams].sort().forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = t;
+      selEquipo.appendChild(opt);
+    });
+    fgEquipo.classList.remove('hidden');
+
+    renderGroup(grupoId, '');
+  });
+
+  selEquipo.addEventListener('change', () => {
+    const grupoId = selGrupo.value;
+    if (grupoId) renderGroup(grupoId, selEquipo.value);
+  });
+
+  // ── Rendering: Por Grupo ──────────────────────────────────
+
+  function clearContent(isGrupoMode) {
+    const msg = isGrupoMode
+      ? 'Selecciona género, categoría y grupo para ver el calendario y la clasificación.'
+      : 'Selecciona género y categoría para ver el calendario por fecha.';
+    document.getElementById('main-content').innerHTML =
+      `<div class="placeholder"><div class="icon">🏓</div><p>${msg}</p></div>`;
+  }
+
+  function renderGroup(grupoId, equipo) {
+    const g = DATA.grupos[grupoId];
+    if (!g) return;
+
+    const partidos = equipo
+      ? g.partidos.filter(p => p.equipo_local === equipo || p.equipo_visitante === equipo)
+      : g.partidos;
+
+    const subtitle = equipo
+      ? `${g.info.label} · <strong>${escHtml(equipo)}</strong>`
+      : g.info.label;
+
+    const html = `
+      <div class="group-label">${subtitle}</div>
+      <div class="section">
+        <div class="section-title">Clasificación</div>
+        ${renderClasificacion(g.clasificacion, equipo)}
+      </div>
+      <div class="section">
+        <div class="section-title">Calendario</div>
+        ${renderPartidos(partidos, equipo)}
+      </div>
+    `;
+    document.getElementById('main-content').innerHTML = html;
+  }
+
+  function renderClasificacion(rows, highlightTeam) {
+    if (!rows || rows.length === 0) return '<p style="color:#888;font-size:.9rem">Sin datos de clasificación.</p>';
+
+    const thead = `<thead><tr>
+      <th>Pos</th><th>Equipo</th>
+      <th title="Puntos">Pts</th>
+      <th title="Enfrentamientos jugados">EJ</th>
+      <th title="Partidos ganados">PG</th>
+      <th title="Sets a favor">SF</th>
+      <th title="Sets en contra">SC</th>
+      <th title="Juegos a favor">JF</th>
+      <th title="Juegos en contra">JC</th>
+    </tr></thead>`;
+
+    const tbody = rows.map(r => {
+      const promoClass  = r.posicion <= 2 ? ' promo' : '';
+      const posClass    = r.posicion === 1 ? ' pos-1' : r.posicion === 2 ? ' pos-2' : '';
+      const teamClass   = highlightTeam && r.equipo === highlightTeam ? ' my-team-row' : '';
+      const name = r.equipo_url
+        ? `<a href="${escHtml(r.equipo_url)}" target="_blank" style="color:inherit;text-decoration:none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">${escHtml(r.equipo)}</a>`
+        : escHtml(r.equipo);
+      return `<tr class="${promoClass}${posClass}${teamClass}">
+        <td>${r.posicion}</td>
+        <td>${name}</td>
+        <td><strong>${r.puntos}</strong></td>
+        <td>${r.enfrentamientos_disputados ?? '—'}</td>
+        <td>${r.partidos_ganados ?? '—'}</td>
+        <td>${r.sets_favor ?? '—'}</td>
+        <td>${r.sets_contra ?? '—'}</td>
+        <td>${r.juegos_favor ?? '—'}</td>
+        <td>${r.juegos_contra ?? '—'}</td>
+      </tr>`;
+    }).join('');
+
+    return `<div class="standings-wrapper"><table>${thead}<tbody>${tbody}</tbody></table></div>`;
+  }
+
+  function renderPartidos(partidos, highlightTeam) {
+    if (!partidos || partidos.length === 0) return '<p style="color:#888;font-size:.9rem">Sin partidos.</p>';
+
+    const cards = partidos.map(p => {
+      const isMyMatch = highlightTeam && (p.equipo_local === highlightTeam || p.equipo_visitante === highlightTeam);
+      const localClass = highlightTeam && p.equipo_local === highlightTeam ? ' my-team' : '';
+      const visitClass = highlightTeam && p.equipo_visitante === highlightTeam ? ' my-team' : '';
+
+      let badgeClass, info;
+      if (p.estado === 'jugado') {
+        badgeClass = 'jugado';
+        const scoreHtml = `<span class="score">${escHtml(p.resultado)}</span>`;
+        const link = p.url_resultado
+          ? ` <a class="result-link" href="${escHtml(p.url_resultado)}" target="_blank">Ver resultado</a>`
+          : '';
+        info = scoreHtml + link;
+      } else if (p.estado === 'pendiente') {
+        badgeClass = 'pendiente';
+        const dateHtml = p.fecha_texto ? `<span class="match-date">📅 ${escHtml(p.fecha_texto)}</span>` : '';
+        const link = p.url_horario
+          ? ` <a class="result-link" href="${escHtml(p.url_horario)}" target="_blank">Ver horario</a>`
+          : '';
+        info = dateHtml + link;
+      } else {
+        badgeClass = 'unknown';
+        info = '';
+      }
+
+      return `<div class="match-card${isMyMatch ? ' highlight' : ''}">
+        <div class="match-teams">
+          <span class="team local${localClass}">${escHtml(p.equipo_local)}</span>
+          <span class="vs">vs</span>
+          <span class="team visit${visitClass}">${escHtml(p.equipo_visitante)}</span>
+        </div>
+        <div class="match-footer">
+          <span class="badge ${badgeClass}">${p.estado === 'jugado' ? 'Jugado' : p.estado === 'pendiente' ? 'Pendiente' : 'Desconocido'}</span>
+          <span>${info}</span>
+        </div>
+      </div>`;
+    }).join('');
+
+    return `<div class="matches-grid">${cards}</div>`;
+  }
+
+  // ── Rendering: Por Fecha ──────────────────────────────────
+
+  function renderVistaFecha(genero, categoria) {
+    // Collect all partidos from matching groups
+    const allPartidos = [];
+    Object.entries(getGrupos()).forEach(([, g]) => {
+      if (g.info.genero !== genero || g.info.categoria !== categoria) return;
+      (g.partidos || []).forEach(p => {
+        allPartidos.push({ ...p, _grupoLetra: g.info.grupo });
+      });
+    });
+
+    if (allPartidos.length === 0) {
+      document.getElementById('main-content').innerHTML =
+        '<div class="placeholder"><div class="icon">📅</div><p>No hay partidos para esta selección.</p></div>';
+      return;
+    }
+
+    // Bucket by fecha_texto (pending) or "Jugados" (played) or "Sin fecha" (unknown)
+    const buckets = {};  // key → { label, date, rows[] }
+    const JUGADOS_KEY = '__jugados__';
+    const SINFECHA_KEY = '__sinfecha__';
+
+    allPartidos.forEach(p => {
+      let key;
+      if (p.estado === 'pendiente') {
+        key = p.fecha_texto || SINFECHA_KEY;
+      } else if (p.estado === 'jugado') {
+        key = JUGADOS_KEY;
+      } else {
+        // desconocido — try to extract date from cell_text
+        const d = parseFecha(p.cell_text);
+        key = d ? (p.cell_text.match(/\d{1,2}\s+(?:Ene|Feb|Mar|Abr|May|Jun|Jul|Ago|Sep|Oct|Nov|Dic)/i) || [SINFECHA_KEY])[0] : SINFECHA_KEY;
+      }
+
+      if (!buckets[key]) {
+        buckets[key] = { label: key, date: parseFecha(key), rows: [] };
+        if (key === JUGADOS_KEY) buckets[key].label = 'Partidos jugados';
+        if (key === SINFECHA_KEY) buckets[key].label = 'Sin fecha';
+      }
+      buckets[key].rows.push(p);
+    });
+
+    // Sort: pending by date first, then sin-fecha, then jugados
+    const sorted = Object.values(buckets).sort((a, b) => {
+      if (a.label === 'Partidos jugados') return 1;
+      if (b.label === 'Partidos jugados') return -1;
+      if (a.label === 'Sin fecha') return 1;
+      if (b.label === 'Sin fecha') return -1;
+      if (a.date && b.date) return a.date - b.date;
+      return 0;
+    });
+
+    const catLabel = ordinalCat(categoria) + ' ' + (genero === 'M' ? 'Masculina' : 'Femenina');
+
+    let html = `<div class="group-label">${escHtml(catLabel)} — todos los grupos</div>`;
+
+    sorted.forEach(bucket => {
+      const icon = bucket.label === 'Partidos jugados' ? '✅' : bucket.label === 'Sin fecha' ? '❓' : '📅';
+      const rows = bucket.rows
+        .sort((a, b) => a._grupoLetra.localeCompare(b._grupoLetra))
+        .map(p => {
+          let infoCell = '';
+          if (p.estado === 'jugado') {
+            infoCell = p.url_resultado
+              ? `<a class="result-link" href="${escHtml(p.url_resultado)}" target="_blank">${escHtml(p.resultado)}</a>`
+              : `<span class="score" style="font-size:.85rem">${escHtml(p.resultado)}</span>`;
+          } else if (p.estado === 'pendiente' && p.url_horario) {
+            infoCell = `<a class="result-link" href="${escHtml(p.url_horario)}" target="_blank">Ver horario</a>`;
+          }
+          return `<tr>
+            <td><span class="grupo-badge">Grp ${escHtml(p._grupoLetra)}</span></td>
+            <td>${escHtml(p.equipo_local)}</td>
+            <td>vs</td>
+            <td>${escHtml(p.equipo_visitante)}</td>
+            <td>${infoCell}</td>
+          </tr>`;
+        }).join('');
+
+      html += `<div class="fecha-bucket">
+        <div class="fecha-header">${icon} ${escHtml(bucket.label)}</div>
+        <div class="standings-wrapper">
+          <table class="fecha-table">
+            <thead><tr>
+              <th>Grupo</th><th>Local</th><th></th><th>Visitante</th><th></th>
+            </tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      </div>`;
+    });
+
+    document.getElementById('main-content').innerHTML = html;
+  }
+
+  // ── Init ─────────────────────────────────────────────────
+  loadData();
+</script>
+</body>
+</html>
