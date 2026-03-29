@@ -36,4 +36,4 @@ jobs:
             git commit -m "chore: actualizar datos $(date -u +'%Y-%m-%d')"
             git push
           ) push
-          )
+          
