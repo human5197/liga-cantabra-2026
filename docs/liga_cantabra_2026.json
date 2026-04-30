@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-04-29T09:24:37.117078",
+  "fecha_scrape": "2026-04-30T09:24:11.292120",
   "grupos": {
     "31247": {
       "info": {
@@ -32244,9 +32244,8 @@
           "grupo_letra": "D",
           "equipo_local": "CAMARGO C",
           "equipo_visitante": "PADEL X5 C",
-          "fecha_texto": "1 - 3 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=71&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "2 May 16:00Tandas:2-2-1SmashAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -40324,7 +40323,7 @@
     "total_grupos": 38,
     "total_partidos": 2292,
     "partidos_jugados": 2132,
-    "partidos_pendientes": 117,
+    "partidos_pendientes": 116,
     "total_equipos_clasificacion": 301
   }
 }
