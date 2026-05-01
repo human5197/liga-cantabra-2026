@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-04-30T09:24:11.292120",
+  "fecha_scrape": "2026-05-01T09:07:48.367625",
   "grupos": {
     "31247": {
       "info": {
@@ -10363,7 +10363,7 @@
           "equipo_local": "RACKET SPORT E",
           "equipo_visitante": "G6 L - GLOW PADEL",
           "estado": "desconocido",
-          "cell_text": "1 May 10:30Tandas:2-2RacketAlineaciones"
+          "cell_text": "0/0Tandas:2-2RacketActa"
         },
         {
           "grupo_id": "31278",
@@ -27560,7 +27560,7 @@
           "equipo_local": "PADEL CAYON A",
           "equipo_visitante": "SMASH PADEL D",
           "estado": "desconocido",
-          "cell_text": "1 May 10:00Tandas:2-2-1Pistas municipales SaronAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1Pistas municipales SaronActa"
         },
         {
           "grupo_id": "31255",
@@ -32715,7 +32715,7 @@
           "equipo_local": "T3 PADEL A",
           "equipo_visitante": "+ PADEL SANTANDER D",
           "estado": "desconocido",
-          "cell_text": "30 Abr 20:00Tandas:2-2-1MonteverdeAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1MonteverdeActa"
         },
         {
           "grupo_id": "31267",
