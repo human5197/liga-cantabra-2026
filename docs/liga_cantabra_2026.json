@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-04T09:31:28.404632",
+  "fecha_scrape": "2026-05-05T09:15:07.554888",
   "grupos": {
     "31247": {
       "info": {
@@ -10064,9 +10064,8 @@
           "grupo_letra": "A",
           "equipo_local": "BATHCO PADEL TEAM ATP B",
           "equipo_visitante": "RACKET SPORT E",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=70&grupo=31278",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 17:00Tandas:2-2PISTAS MUNICIPALES LOS CORRALES DE BUELNAAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10164,7 +10163,7 @@
           "equipo_local": "MARISMA DUIN D",
           "equipo_visitante": "BATHCO PADEL TEAM ATP B",
           "estado": "desconocido",
-          "cell_text": "9 May 11:30Tandas:2-2Duin MarismaAlineaciones"
+          "cell_text": "10 May 11:30Tandas:2-2Duin MarismaAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10265,7 +10264,7 @@
           "equipo_local": "MARISMA DUIN D",
           "equipo_visitante": "LA MARINA H",
           "estado": "desconocido",
-          "cell_text": "10 May 11:30Tandas:2-2Duin MarismaAlineaciones"
+          "cell_text": "9 May 11:30Tandas:2-2Duin MarismaAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10575,8 +10574,12 @@
           "grupo_letra": "A",
           "equipo_local": "EL TEMPLO E - GRAFICAS ALBERDI",
           "equipo_visitante": "HOVELO B - CLINICA DENTAL LIDIA PINEDA",
-          "estado": "desconocido",
-          "cell_text": "1/3Acta"
+          "resultado_local": 1,
+          "resultado_visitante": 3,
+          "resultado": "1/3",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=65&grupo=31278",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=65&grupo=31278",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31278",
@@ -10777,9 +10780,8 @@
           "grupo_letra": "A",
           "equipo_local": "PADEL CAYON",
           "equipo_visitante": "RACKET SPORT E",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=63&grupo=31278",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 16:00Tandas:2-2Pistas municipales SaronAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10804,9 +10806,8 @@
           "grupo_letra": "A",
           "equipo_local": "PADEL CAYON",
           "equipo_visitante": "EL TEMPLO E - GRAFICAS ALBERDI",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=72&grupo=31278",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 15:30Tandas:2-2Pistas municipales SaronAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10906,9 +10907,8 @@
           "grupo_letra": "A",
           "equipo_local": "G6 L - GLOW PADEL",
           "equipo_visitante": "SMASH PADEL B - TALLERES FAKKAS",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=71&grupo=31278",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 18:30Tandas:2-2G6 RAOSAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -10963,9 +10963,8 @@
           "grupo_letra": "A",
           "equipo_local": "G6 L - GLOW PADEL",
           "equipo_visitante": "LA MARINA H",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=62&grupo=31278",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 11:00Tandas:2-2G6 RAOSAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -11178,16 +11177,16 @@
           "posicion": 5,
           "equipo": "EL TEMPLO E - GRAFICAS ALBERDI",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158045&Id=28074",
-          "enfrentamientos_disputados": 14,
+          "enfrentamientos_disputados": 15,
           "puntos": 13,
-          "partidos_disputados": 56,
-          "partidos_ganados": 25,
-          "sets_favor": 55,
-          "sets_contra": 68,
-          "average_sets": -13,
-          "juegos_favor": 507,
-          "juegos_contra": 571,
-          "average_juegos": -64
+          "partidos_disputados": 60,
+          "partidos_ganados": 26,
+          "sets_favor": 59,
+          "sets_contra": 74,
+          "average_sets": -15,
+          "juegos_favor": 552,
+          "juegos_contra": 622,
+          "average_juegos": -70
         },
         {
           "grupo_id": "31278",
@@ -11218,16 +11217,16 @@
           "posicion": 7,
           "equipo": "HOVELO B - CLINICA DENTAL LIDIA PINEDA",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158105&Id=28074",
-          "enfrentamientos_disputados": 14,
-          "puntos": 6,
-          "partidos_disputados": 56,
-          "partidos_ganados": 18,
-          "sets_favor": 45,
-          "sets_contra": 80,
-          "average_sets": -35,
-          "juegos_favor": 449,
-          "juegos_contra": 642,
-          "average_juegos": -193
+          "enfrentamientos_disputados": 15,
+          "puntos": 8,
+          "partidos_disputados": 60,
+          "partidos_ganados": 21,
+          "sets_favor": 51,
+          "sets_contra": 84,
+          "average_sets": -33,
+          "juegos_favor": 500,
+          "juegos_contra": 687,
+          "average_juegos": -187
         },
         {
           "grupo_id": "31278",
@@ -11236,26 +11235,6 @@
           "categoria": 5,
           "grupo_letra": "A",
           "posicion": 8,
-          "equipo": "SMASH PADEL B - TALLERES FAKKAS",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158024&Id=28074",
-          "enfrentamientos_disputados": 14,
-          "puntos": 4,
-          "partidos_disputados": 56,
-          "partidos_ganados": 13,
-          "sets_favor": 35,
-          "sets_contra": 90,
-          "average_sets": -55,
-          "juegos_favor": 417,
-          "juegos_contra": 641,
-          "average_juegos": -224
-        },
-        {
-          "grupo_id": "31278",
-          "grupo_label": "5ª CATEGORÍA FEMENINA - GRUPO A",
-          "genero": "F",
-          "categoria": 5,
-          "grupo_letra": "A",
-          "posicion": 9,
           "equipo": "LA MARINA H",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158108&Id=28074",
           "enfrentamientos_disputados": 14,
@@ -11268,6 +11247,26 @@
           "juegos_favor": 415,
           "juegos_contra": 626,
           "average_juegos": -211
+        },
+        {
+          "grupo_id": "31278",
+          "grupo_label": "5ª CATEGORÍA FEMENINA - GRUPO A",
+          "genero": "F",
+          "categoria": 5,
+          "grupo_letra": "A",
+          "posicion": 9,
+          "equipo": "SMASH PADEL B - TALLERES FAKKAS",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158024&Id=28074",
+          "enfrentamientos_disputados": 14,
+          "puntos": 4,
+          "partidos_disputados": 56,
+          "partidos_ganados": 13,
+          "sets_favor": 35,
+          "sets_contra": 90,
+          "average_sets": -55,
+          "juegos_favor": 417,
+          "juegos_contra": 641,
+          "average_juegos": -224
         }
       ]
     },
@@ -27611,9 +27610,8 @@
           "grupo_letra": "A",
           "equipo_local": "CENTRAL PADEL J - SANCIBRIAN C",
           "equipo_visitante": "PADEL CAYON A",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=79&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 10:00Tandas:2-2-1Pistas de SaronAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -27917,8 +27915,12 @@
           "grupo_letra": "A",
           "equipo_local": "VILLAESCUSA D",
           "equipo_visitante": "ZINK PADEL G",
-          "estado": "desconocido",
-          "cell_text": "3/2Acta"
+          "resultado_local": 3,
+          "resultado_visitante": 2,
+          "resultado": "3/2",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=74&grupo=31255",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=74&grupo=31255",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31255",
@@ -28736,9 +28738,8 @@
           "grupo_letra": "A",
           "equipo_local": "G6 M",
           "equipo_visitante": "RACKET SPORT F - +50",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=76&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 18:00Tandas:3-2RAOSAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -28901,16 +28902,16 @@
           "posicion": 7,
           "equipo": "VILLAESCUSA D",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157884&Id=28074",
-          "enfrentamientos_disputados": 14,
-          "puntos": 4,
-          "partidos_disputados": 70,
-          "partidos_ganados": 21,
-          "sets_favor": 52,
-          "sets_contra": 106,
-          "average_sets": -54,
-          "juegos_favor": 619,
-          "juegos_contra": 818,
-          "average_juegos": -199
+          "enfrentamientos_disputados": 15,
+          "puntos": 5,
+          "partidos_disputados": 75,
+          "partidos_ganados": 24,
+          "sets_favor": 59,
+          "sets_contra": 110,
+          "average_sets": -51,
+          "juegos_favor": 675,
+          "juegos_contra": 866,
+          "average_juegos": -191
         },
         {
           "grupo_id": "31255",
@@ -28961,16 +28962,16 @@
           "posicion": 10,
           "equipo": "ZINK PADEL G",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157888&Id=28074",
-          "enfrentamientos_disputados": 14,
+          "enfrentamientos_disputados": 15,
           "puntos": 1,
-          "partidos_disputados": 70,
-          "partidos_ganados": 17,
-          "sets_favor": 46,
-          "sets_contra": 115,
-          "average_sets": -69,
-          "juegos_favor": 612,
-          "juegos_contra": 843,
-          "average_juegos": -231
+          "partidos_disputados": 75,
+          "partidos_ganados": 19,
+          "sets_favor": 50,
+          "sets_contra": 122,
+          "average_sets": -72,
+          "juegos_favor": 660,
+          "juegos_contra": 899,
+          "average_juegos": -239
         }
       ]
     },
@@ -29163,9 +29164,8 @@
           "grupo_letra": "B",
           "equipo_local": "PADEL RENEDO - MADIGAN�S TAVERN",
           "equipo_visitante": "CENTRAL PADEL H - SANCIBRIAN B",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=80&grupo=31265",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 10:00Tandas:2-2-1RENEDOAlineaciones"
         },
         {
           "grupo_id": "31265",
@@ -29714,9 +29714,8 @@
           "grupo_letra": "B",
           "equipo_local": "EL TEMPLO D -GRAFICAS ALBERDI",
           "equipo_visitante": "MERUELO B -VILLA DE NOJA B",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=77&grupo=31265",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 21:00Tandas:2-3EL TEMPLO DEL PADELAlineaciones"
         },
         {
           "grupo_id": "31265",
@@ -30134,9 +30133,8 @@
           "grupo_letra": "B",
           "equipo_local": "G6 N - MVP PADEL TEAM",
           "equipo_visitante": "SMASH PADEL E",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=76&grupo=31265",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 17:00Tandas:3-2RAOSAlineaciones"
         },
         {
           "grupo_id": "31265",
@@ -30682,9 +30680,8 @@
           "grupo_letra": "C",
           "equipo_local": "G6 � - GALERA",
           "equipo_visitante": "C.D. SALAS B",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=78&grupo=31266",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 11:30Tandas:2-2-1RAOSAlineaciones"
         },
         {
           "grupo_id": "31266",
@@ -30766,9 +30763,8 @@
           "grupo_letra": "C",
           "equipo_local": "LA PLAYUCA ASTILLERO C",
           "equipo_visitante": "MEDIO CUDEYO C",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=79&grupo=31266",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:2-2-1Pistas GuarnizoAlineaciones"
         },
         {
           "grupo_id": "31266",
@@ -31009,9 +31005,8 @@
           "grupo_letra": "C",
           "equipo_local": "OLIMPICO DE GAMA C - DBS INSTALTECK",
           "equipo_visitante": "AMYPAS",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=76&grupo=31266",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:2-2-1PADEL X5 BAHIASONAlineaciones"
         },
         {
           "grupo_id": "31266",
@@ -32017,9 +32012,8 @@
           "grupo_letra": "D",
           "equipo_local": "+ PADEL SANTANDER D",
           "equipo_visitante": "A.D.R.M. C - G� PATATAS REGATO PUENTE",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=78&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 17:00Tandas:3-2Go fit Ruth BeitiaAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -32623,9 +32617,8 @@
           "grupo_letra": "D",
           "equipo_local": "PADEL X5 C",
           "equipo_visitante": "VILLA DE COLINDRES C",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=76&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 15:30Tandas:3-2X5 CiceroAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -32770,9 +32763,8 @@
           "grupo_letra": "D",
           "equipo_local": "RACKET SPORT G",
           "equipo_visitante": "G6 O - INGECID",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=79&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 10:30Tandas:2-2-1Racket Sport CenterAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -33220,9 +33212,8 @@
           "grupo_letra": "D",
           "equipo_local": "C.D.E. ESCALANTE PADEL CLUB",
           "equipo_visitante": "CAMARGO C",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=80&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 10:30Tandas:2-2-1X5 BAH�AASONAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -33921,8 +33912,12 @@
           "grupo_letra": "A",
           "equipo_local": "T3 PADEL B",
           "equipo_visitante": "PENAGOS B",
-          "estado": "desconocido",
-          "cell_text": "0/0Tandas:2-2-1T3 p�del, Santander (Monteverde)Acta"
+          "resultado_local": 1,
+          "resultado_visitante": 4,
+          "resultado": "1/4",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=57&grupo=31268",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=57&grupo=31268",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31268",
@@ -34094,9 +34089,8 @@
           "grupo_letra": "A",
           "equipo_local": "PENAGOS B",
           "equipo_visitante": "P.A.G. ASTILLERO GUARNIZO C",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=61&grupo=31268",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 10:30Tandas:2-2-1Pistas de p�del Penagos. 39627. La Helguera.Alineaciones"
         },
         {
           "grupo_id": "31268",
@@ -34219,8 +34213,12 @@
           "grupo_letra": "A",
           "equipo_local": "OLIMPICO DE GAMA D -DBS INSTALTECK",
           "equipo_visitante": "MARISMA DUIN  B",
-          "estado": "desconocido",
-          "cell_text": "4/1Acta"
+          "resultado_local": 4,
+          "resultado_visitante": 1,
+          "resultado": "4/1",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=58&grupo=31268",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=58&grupo=31268",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31268",
@@ -34362,9 +34360,8 @@
           "grupo_letra": "A",
           "equipo_local": "G6 U",
           "equipo_visitante": "NUEVO SAN LAZARO - PONTEJOS B",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=62&grupo=31268",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:2-2-1AEROPUERTOAlineaciones"
         },
         {
           "grupo_id": "31268",
@@ -34551,8 +34548,12 @@
           "grupo_letra": "A",
           "equipo_local": "P.A.G. ASTILLERO GUARNIZO C",
           "equipo_visitante": "G6 U",
-          "estado": "desconocido",
-          "cell_text": "0/0Tandas:2-2-1ASTILLEROActa"
+          "resultado_local": 2,
+          "resultado_visitante": 3,
+          "resultado": "2/3",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=60&grupo=31268",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=60&grupo=31268",
+          "estado": "jugado"
         }
       ],
       "clasificacion": [
@@ -34583,6 +34584,26 @@
           "categoria": 6,
           "grupo_letra": "A",
           "posicion": 2,
+          "equipo": "G6 U",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158085&Id=28074",
+          "enfrentamientos_disputados": 14,
+          "puntos": 10,
+          "partidos_disputados": 70,
+          "partidos_ganados": 49,
+          "sets_favor": 105,
+          "sets_contra": 57,
+          "average_sets": 48,
+          "juegos_favor": 837,
+          "juegos_contra": 663,
+          "average_juegos": 174
+        },
+        {
+          "grupo_id": "31268",
+          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO A",
+          "genero": "M",
+          "categoria": 6,
+          "grupo_letra": "A",
+          "posicion": 3,
           "equipo": "NUEVO SAN LAZARO - PONTEJOS B",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157918&Id=28074",
           "enfrentamientos_disputados": 13,
@@ -34602,39 +34623,19 @@
           "genero": "M",
           "categoria": 6,
           "grupo_letra": "A",
-          "posicion": 3,
-          "equipo": "G6 U",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158085&Id=28074",
-          "enfrentamientos_disputados": 13,
-          "puntos": 9,
-          "partidos_disputados": 65,
-          "partidos_ganados": 46,
-          "sets_favor": 99,
-          "sets_contra": 53,
-          "average_sets": 46,
-          "juegos_favor": 783,
-          "juegos_contra": 614,
-          "average_juegos": 169
-        },
-        {
-          "grupo_id": "31268",
-          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO A",
-          "genero": "M",
-          "categoria": 6,
-          "grupo_letra": "A",
           "posicion": 4,
           "equipo": "P.A.G. ASTILLERO GUARNIZO C",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158137&Id=28074",
-          "enfrentamientos_disputados": 12,
+          "enfrentamientos_disputados": 13,
           "puntos": 8,
-          "partidos_disputados": 60,
-          "partidos_ganados": 36,
-          "sets_favor": 80,
-          "sets_contra": 60,
-          "average_sets": 20,
-          "juegos_favor": 655,
-          "juegos_contra": 600,
-          "average_juegos": 55
+          "partidos_disputados": 65,
+          "partidos_ganados": 38,
+          "sets_favor": 84,
+          "sets_contra": 66,
+          "average_sets": 18,
+          "juegos_favor": 704,
+          "juegos_contra": 654,
+          "average_juegos": 50
         },
         {
           "grupo_id": "31268",
@@ -34643,26 +34644,6 @@
           "categoria": 6,
           "grupo_letra": "A",
           "posicion": 5,
-          "equipo": "MARISMA DUIN  B",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157808&Id=28074",
-          "enfrentamientos_disputados": 14,
-          "puntos": 5,
-          "partidos_disputados": 70,
-          "partidos_ganados": 25,
-          "sets_favor": 57,
-          "sets_contra": 95,
-          "average_sets": -38,
-          "juegos_favor": 591,
-          "juegos_contra": 762,
-          "average_juegos": -171
-        },
-        {
-          "grupo_id": "31268",
-          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO A",
-          "genero": "M",
-          "categoria": 6,
-          "grupo_letra": "A",
-          "posicion": 6,
           "equipo": "OLIMPICO DE GAMA D -DBS INSTALTECK",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158084&Id=28074",
           "enfrentamientos_disputados": 13,
@@ -34682,19 +34663,39 @@
           "genero": "M",
           "categoria": 6,
           "grupo_letra": "A",
-          "posicion": 7,
+          "posicion": 6,
           "equipo": "PENAGOS B",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158065&Id=28074",
-          "enfrentamientos_disputados": 12,
-          "puntos": 4,
-          "partidos_disputados": 60,
-          "partidos_ganados": 26,
-          "sets_favor": 63,
-          "sets_contra": 77,
-          "average_sets": -14,
-          "juegos_favor": 609,
-          "juegos_contra": 680,
-          "average_juegos": -71
+          "enfrentamientos_disputados": 13,
+          "puntos": 5,
+          "partidos_disputados": 65,
+          "partidos_ganados": 30,
+          "sets_favor": 72,
+          "sets_contra": 79,
+          "average_sets": -7,
+          "juegos_favor": 667,
+          "juegos_contra": 718,
+          "average_juegos": -51
+        },
+        {
+          "grupo_id": "31268",
+          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO A",
+          "genero": "M",
+          "categoria": 6,
+          "grupo_letra": "A",
+          "posicion": 7,
+          "equipo": "MARISMA DUIN  B",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157808&Id=28074",
+          "enfrentamientos_disputados": 14,
+          "puntos": 5,
+          "partidos_disputados": 70,
+          "partidos_ganados": 25,
+          "sets_favor": 57,
+          "sets_contra": 95,
+          "average_sets": -38,
+          "juegos_favor": 591,
+          "juegos_contra": 762,
+          "average_juegos": -171
         },
         {
           "grupo_id": "31268",
@@ -34705,16 +34706,16 @@
           "posicion": 8,
           "equipo": "T3 PADEL B",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158059&Id=28074",
-          "enfrentamientos_disputados": 12,
+          "enfrentamientos_disputados": 13,
           "puntos": 3,
-          "partidos_disputados": 60,
-          "partidos_ganados": 16,
-          "sets_favor": 42,
-          "sets_contra": 95,
-          "average_sets": -53,
-          "juegos_favor": 500,
-          "juegos_contra": 705,
-          "average_juegos": -205
+          "partidos_disputados": 65,
+          "partidos_ganados": 17,
+          "sets_favor": 44,
+          "sets_contra": 104,
+          "average_sets": -60,
+          "juegos_favor": 538,
+          "juegos_contra": 763,
+          "average_juegos": -225
         },
         {
           "grupo_id": "31268",
@@ -36190,8 +36191,12 @@
           "grupo_letra": "C",
           "equipo_local": "MOVE & GO D",
           "equipo_visitante": "EL TEMPLO G",
-          "estado": "desconocido",
-          "cell_text": "4/1Acta"
+          "resultado_local": 4,
+          "resultado_visitante": 1,
+          "resultado": "4/1",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=60&grupo=31270",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=60&grupo=31270",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31270",
@@ -36549,9 +36554,8 @@
           "grupo_letra": "C",
           "equipo_local": "PADEL PIELAGOS RENEDO",
           "equipo_visitante": "P.A.G. ASTILLERO GUARNIZO D",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=64&grupo=31270",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 17:00Tandas:1-2-2Renedo(pistas junto al pabell�n)Alineaciones"
         },
         {
           "grupo_id": "31270",
@@ -36719,9 +36723,8 @@
           "grupo_letra": "C",
           "equipo_local": "PADEL MIES DEL CORRO C - PROTECMA",
           "equipo_visitante": "G6 S - TRILEROS",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=62&grupo=31270",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:30Tandas:2-3Solares (Medio Cudeyo)Alineaciones"
         },
         {
           "grupo_id": "31270",
@@ -36905,8 +36908,12 @@
           "grupo_letra": "C",
           "equipo_local": "P.A.G. ASTILLERO GUARNIZO D",
           "equipo_visitante": "ZINK PADEL H - ALTAMIRA B",
-          "estado": "desconocido",
-          "cell_text": "3/2Acta"
+          "resultado_local": 3,
+          "resultado_visitante": 2,
+          "resultado": "3/2",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=57&grupo=31270",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=57&grupo=31270",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31270",
@@ -37081,16 +37088,16 @@
           "posicion": 4,
           "equipo": "P.A.G. ASTILLERO GUARNIZO D",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158093&Id=28074",
-          "enfrentamientos_disputados": 12,
-          "puntos": 9,
-          "partidos_disputados": 60,
-          "partidos_ganados": 37,
-          "sets_favor": 80,
-          "sets_contra": 54,
-          "average_sets": 26,
-          "juegos_favor": 610,
-          "juegos_contra": 508,
-          "average_juegos": 102
+          "enfrentamientos_disputados": 13,
+          "puntos": 10,
+          "partidos_disputados": 65,
+          "partidos_ganados": 40,
+          "sets_favor": 86,
+          "sets_contra": 58,
+          "average_sets": 28,
+          "juegos_favor": 660,
+          "juegos_contra": 547,
+          "average_juegos": 113
         },
         {
           "grupo_id": "31270",
@@ -37101,16 +37108,16 @@
           "posicion": 5,
           "equipo": "ZINK PADEL H - ALTAMIRA B",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=157933&Id=28074",
-          "enfrentamientos_disputados": 13,
+          "enfrentamientos_disputados": 14,
           "puntos": 6,
-          "partidos_disputados": 65,
-          "partidos_ganados": 34,
-          "sets_favor": 82,
-          "sets_contra": 71,
-          "average_sets": 11,
-          "juegos_favor": 707,
-          "juegos_contra": 632,
-          "average_juegos": 75
+          "partidos_disputados": 70,
+          "partidos_ganados": 36,
+          "sets_favor": 86,
+          "sets_contra": 77,
+          "average_sets": 9,
+          "juegos_favor": 746,
+          "juegos_contra": 682,
+          "average_juegos": 64
         },
         {
           "grupo_id": "31270",
@@ -37159,18 +37166,18 @@
           "categoria": 6,
           "grupo_letra": "C",
           "posicion": 8,
-          "equipo": "EL TEMPLO G",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158092&Id=28074",
-          "enfrentamientos_disputados": 13,
-          "puntos": 1,
-          "partidos_disputados": 65,
-          "partidos_ganados": 10,
-          "sets_favor": 25,
-          "sets_contra": 112,
-          "average_sets": -87,
-          "juegos_favor": 381,
-          "juegos_contra": 755,
-          "average_juegos": -374
+          "equipo": "MOVE & GO D",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158058&Id=28074",
+          "enfrentamientos_disputados": 14,
+          "puntos": 2,
+          "partidos_disputados": 70,
+          "partidos_ganados": 16,
+          "sets_favor": 34,
+          "sets_contra": 113,
+          "average_sets": -79,
+          "juegos_favor": 433,
+          "juegos_contra": 795,
+          "average_juegos": -362
         },
         {
           "grupo_id": "31270",
@@ -37179,18 +37186,18 @@
           "categoria": 6,
           "grupo_letra": "C",
           "posicion": 9,
-          "equipo": "MOVE & GO D",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158058&Id=28074",
-          "enfrentamientos_disputados": 13,
+          "equipo": "EL TEMPLO G",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158092&Id=28074",
+          "enfrentamientos_disputados": 14,
           "puntos": 1,
-          "partidos_disputados": 65,
-          "partidos_ganados": 12,
-          "sets_favor": 25,
-          "sets_contra": 109,
-          "average_sets": -84,
-          "juegos_favor": 364,
-          "juegos_contra": 754,
-          "average_juegos": -390
+          "partidos_disputados": 70,
+          "partidos_ganados": 11,
+          "sets_favor": 29,
+          "sets_contra": 121,
+          "average_sets": -92,
+          "juegos_favor": 422,
+          "juegos_contra": 824,
+          "average_juegos": -402
         }
       ]
     },
@@ -37225,9 +37232,8 @@
           "grupo_letra": "D",
           "equipo_local": "WALA PADEL B - EL HIPODROMO DE SUSO",
           "equipo_visitante": "CENTRAL PADEL K - BEZANA PADEL TEAM",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=62&grupo=31369",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 10:30Tandas:2-3Central p�delAlineaciones"
         },
         {
           "grupo_id": "31369",
@@ -37834,9 +37840,8 @@
           "grupo_letra": "D",
           "equipo_local": "A.D.R.M. D - G� PATATAS REGATO PUENTE",
           "equipo_visitante": "RACKET SPORT I - CABRITU",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=61&grupo=31369",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "10 May 10:00Tandas:2-2-1SMASH PADEL CLUBAlineaciones"
         },
         {
           "grupo_id": "31369",
@@ -37921,9 +37926,8 @@
           "grupo_letra": "D",
           "equipo_local": "T3 PADEL C",
           "equipo_visitante": "EL TEMPLO F",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=64&grupo=31369",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:3-2Monteverde (muro)Alineaciones"
         },
         {
           "grupo_id": "31369",
@@ -40452,8 +40456,8 @@
   "resumen": {
     "total_grupos": 38,
     "total_partidos": 2292,
-    "partidos_jugados": 2169,
-    "partidos_pendientes": 101,
+    "partidos_jugados": 2176,
+    "partidos_pendientes": 77,
     "total_equipos_clasificacion": 301
   }
 }
