@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-05T09:15:07.554888",
+  "fecha_scrape": "2026-05-06T09:34:41.953207",
   "grupos": {
     "31247": {
       "info": {
@@ -10065,7 +10065,7 @@
           "equipo_local": "BATHCO PADEL TEAM ATP B",
           "equipo_visitante": "RACKET SPORT E",
           "estado": "desconocido",
-          "cell_text": "10 May 17:00Tandas:2-2PISTAS MUNICIPALES LOS CORRALES DE BUELNAAlineaciones"
+          "cell_text": "9 May 10:30Tandas:2-2CLUB LEGACYAlineaciones"
         },
         {
           "grupo_id": "31278",
@@ -28552,9 +28552,8 @@
           "grupo_letra": "A",
           "equipo_local": "SMASH PADEL D",
           "equipo_visitante": "MIO�O PADEL GYM C",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=80&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:1-2-2Smash p�del clubAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -32476,9 +32475,8 @@
           "grupo_letra": "D",
           "equipo_local": "MONTEVERDE G - LA ISLA",
           "equipo_visitante": "T3 PADEL A",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=77&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 11:00Tandas:3-2MonteverdeAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -33711,9 +33709,8 @@
           "grupo_letra": "A",
           "equipo_local": "MONTEVERDE H",
           "equipo_visitante": "OLIMPICO DE GAMA D -DBS INSTALTECK",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=63&grupo=31268",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:3-2Club de Tenis y P�del MonteverdeAlineaciones"
         },
         {
           "grupo_id": "31268",
@@ -34955,9 +34952,8 @@
           "grupo_letra": "B",
           "equipo_local": "BATHCO PADEL TEAM ATP C",
           "equipo_visitante": "G6 T - ECLIPSE SANTANDER",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=64&grupo=31269",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "9 May 10:30Tandas:3-2CLUB LEGACYAlineaciones"
         },
         {
           "grupo_id": "31269",
@@ -38081,9 +38077,8 @@
           "grupo_letra": "D",
           "equipo_local": "SMASH PADEL I - SENOR",
           "equipo_visitante": "G6 R - LOS PUMAS",
-          "fecha_texto": "8 - 10 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=63&grupo=31369",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "8 May 20:00Tandas:1-2-2Smash P�del ClubAlineaciones"
         },
         {
           "grupo_id": "31369",
@@ -40457,7 +40452,7 @@
     "total_grupos": 38,
     "total_partidos": 2292,
     "partidos_jugados": 2176,
-    "partidos_pendientes": 77,
+    "partidos_pendientes": 72,
     "total_equipos_clasificacion": 301
   }
 }
