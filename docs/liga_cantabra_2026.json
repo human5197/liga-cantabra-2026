@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-12T09:50:10.346153",
+  "fecha_scrape": "2026-05-13T09:52:13.908045",
   "grupos": {
     "31247": {
       "info": {
@@ -27555,9 +27555,8 @@
           "grupo_letra": "A",
           "equipo_local": "PADEL CAYON A",
           "equipo_visitante": "ZINK PADEL G",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=83&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "16 May 10:00Tandas:2-2-1Pistas municipales SaronAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -27789,9 +27788,8 @@
           "grupo_letra": "A",
           "equipo_local": "MIO�O PADEL GYM C",
           "equipo_visitante": "CENTRAL PADEL J - SANCIBRIAN C",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=82&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "15 May 20:00Tandas:2-3Mio�o P�del GymAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -27981,9 +27979,8 @@
           "grupo_letra": "A",
           "equipo_local": "VILLAESCUSA D",
           "equipo_visitante": "RACKET SPORT F - +50",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=85&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "16 May 10:30Tandas:2-2-1la Concha de VillaescusaAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -28685,9 +28682,8 @@
           "grupo_letra": "A",
           "equipo_local": "SMASH PADEL D",
           "equipo_visitante": "G6 M",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=81&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "17 May 10:00Tandas:2-2-1SmashAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -29364,9 +29360,8 @@
           "grupo_letra": "B",
           "equipo_local": "ZINK PADEL F - ALTAMIRA A",
           "equipo_visitante": "EL TEMPLO D -GRAFICAS ALBERDI",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=84&grupo=31265",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "16 May 10:30Tandas:3-2ZINK PADELAlineaciones"
         },
         {
           "grupo_id": "31265",
@@ -31254,9 +31249,8 @@
           "grupo_letra": "C",
           "equipo_local": "MOVE & GO C",
           "equipo_visitante": "LA PLAYUCA ASTILLERO C",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=82&grupo=31266",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "16 May 10:00Tandas:2-2-1Move&go torrelavega.Alineaciones"
         },
         {
           "grupo_id": "31266",
@@ -34261,9 +34255,8 @@
           "grupo_letra": "A",
           "equipo_local": "RACKET SPORT J",
           "equipo_visitante": "PENAGOS B",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=65&grupo=31268",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "16 May 10:30Tandas:2-2-1Racket sport centerAlineaciones"
         },
         {
           "grupo_id": "31268",
@@ -35844,9 +35837,8 @@
           "grupo_letra": "B",
           "equipo_local": "MONTEVERDE J - LOPEZ RESTEGUI",
           "equipo_visitante": "LEGACY B - AMOS 10 INMOBILIARIA",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=66&grupo=31269",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "17 May 11:30Tandas:2-3MonteverdeAlineaciones"
         },
         {
           "grupo_id": "31269",
@@ -38123,9 +38115,8 @@
           "grupo_letra": "D",
           "equipo_local": "T3 PADEL C",
           "equipo_visitante": "A.D.R.M. D - G� PATATAS REGATO PUENTE",
-          "fecha_texto": "15 - 17 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=65&grupo=31369",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "17 May 10:00Tandas:3-2Monteverde (muro)Alineaciones"
         },
         {
           "grupo_id": "31369",
@@ -40601,7 +40592,7 @@
     "total_grupos": 38,
     "total_partidos": 2292,
     "partidos_jugados": 2220,
-    "partidos_pendientes": 45,
+    "partidos_pendientes": 36,
     "total_equipos_clasificacion": 301
   }
 }
