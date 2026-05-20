@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-19T10:42:48.024847",
+  "fecha_scrape": "2026-05-20T10:29:49.567347",
   "grupos": {
     "31247": {
       "info": {
@@ -27750,9 +27750,8 @@
           "grupo_letra": "A",
           "equipo_local": "CENTRAL PADEL J - SANCIBRIAN C",
           "equipo_visitante": "SMASH PADEL D",
-          "fecha_texto": "22 - 24 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=90&grupo=31255",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "24 May 18:00Tandas:2-3Central PadelAlineaciones"
         },
         {
           "grupo_id": "31255",
@@ -32146,9 +32145,8 @@
           "grupo_letra": "D",
           "equipo_local": "+ PADEL SANTANDER D",
           "equipo_visitante": "CAMARGO C",
-          "fecha_texto": "22 - 24 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=89&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "23 May 11:00Tandas:2-3Go fitAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -32736,9 +32734,8 @@
           "grupo_letra": "D",
           "equipo_local": "PADEL X5 C",
           "equipo_visitante": "T3 PADEL A",
-          "fecha_texto": "22 - 24 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=86&grupo=31267",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "22 May 20:00Tandas:3-2X5 CiceroAlineaciones"
         },
         {
           "grupo_id": "31267",
@@ -33818,9 +33815,8 @@
           "grupo_letra": "A",
           "equipo_local": "MONTEVERDE H",
           "equipo_visitante": "T3 PADEL B",
-          "fecha_texto": "22 - 24 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=71&grupo=31268",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "22 May 20:00Tandas:2-3Club de Tenis y P�del MonteverdeAlineaciones"
         },
         {
           "grupo_id": "31268",
@@ -36335,9 +36331,8 @@
           "grupo_letra": "C",
           "equipo_local": "MOVE & GO D",
           "equipo_visitante": "G6 S - TRILEROS",
-          "fecha_texto": "22 - 24 May",
-          "url_horario": "https://federacioncantabradepadel.com/Liga_AccesoHorario?id=28074&partido=69&grupo=31270",
-          "estado": "pendiente"
+          "estado": "desconocido",
+          "cell_text": "24 May 10:00Tandas:2-3Move&go santanderAlineaciones"
         },
         {
           "grupo_id": "31270",
@@ -40702,7 +40697,7 @@
     "total_grupos": 38,
     "total_partidos": 2292,
     "partidos_jugados": 2256,
-    "partidos_pendientes": 5,
+    "partidos_pendientes": 0,
     "total_equipos_clasificacion": 301
   }
 }
