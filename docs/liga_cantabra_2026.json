@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-20T10:29:49.567347",
+  "fecha_scrape": "2026-05-21T10:46:52.881554",
   "grupos": {
     "31247": {
       "info": {
@@ -38539,12 +38539,12 @@
           "puntos": 10,
           "partidos_disputados": 75,
           "partidos_ganados": 44,
-          "sets_favor": 96,
-          "sets_contra": 66,
-          "average_sets": 30,
-          "juegos_favor": 762,
-          "juegos_contra": 663,
-          "average_juegos": 99
+          "sets_favor": 94,
+          "sets_contra": 69,
+          "average_sets": 25,
+          "juegos_favor": 745,
+          "juegos_contra": 670,
+          "average_juegos": 75
         },
         {
           "grupo_id": "31369",
@@ -38619,12 +38619,12 @@
           "puntos": 4,
           "partidos_disputados": 75,
           "partidos_ganados": 22,
-          "sets_favor": 47,
-          "sets_contra": 117,
-          "average_sets": -70,
-          "juegos_favor": 539,
-          "juegos_contra": 876,
-          "average_juegos": -337
+          "sets_favor": 50,
+          "sets_contra": 115,
+          "average_sets": -65,
+          "juegos_favor": 546,
+          "juegos_contra": 859,
+          "average_juegos": -313
         },
         {
           "grupo_id": "31369",
