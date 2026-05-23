@@ -1,7 +1,7 @@
 {
   "liga": "Liga Cántabra de Pádel 2026",
   "liga_id": "28074",
-  "fecha_scrape": "2026-05-22T10:30:33.333984",
+  "fecha_scrape": "2026-05-23T09:09:53.429210",
   "grupos": {
     "31247": {
       "info": {
@@ -28074,7 +28074,7 @@
           "equipo_local": "ZINK PADEL G",
           "equipo_visitante": "MIO�O PADEL GYM C",
           "estado": "desconocido",
-          "cell_text": "23 May 10:30Tandas:2-3ZinkAlineaciones"
+          "cell_text": "0/0Tandas:2-3ZinkActa"
         },
         {
           "grupo_id": "31255",
@@ -28385,7 +28385,7 @@
           "equipo_local": "RACKET SPORT F - +50",
           "equipo_visitante": "ALDAY BOUCO C",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:3-2RacketsAlineaciones"
+          "cell_text": "2/3Acta"
         },
         {
           "grupo_id": "31255",
@@ -29496,7 +29496,7 @@
           "equipo_local": "+ PADEL SANTANDER E",
           "equipo_visitante": "CENTRAL PADEL H - SANCIBRIAN B",
           "estado": "desconocido",
-          "cell_text": "23 May 10:00Tandas:2-2-1GO FITAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1GO FITActa"
         },
         {
           "grupo_id": "31265",
@@ -31091,7 +31091,7 @@
           "equipo_local": "OLIMPICO DE GAMA C - DBS INSTALTECK",
           "equipo_visitante": "CENTRAL PADEL I - ACTIVA NORTE",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:2-2-1X5 BahiasonAlineaciones"
+          "cell_text": "3/2Acta"
         },
         {
           "grupo_id": "31266",
@@ -31522,7 +31522,7 @@
           "equipo_local": "SMASH PADEL F",
           "equipo_visitante": "MEDIO CUDEYO C",
           "estado": "desconocido",
-          "cell_text": "23 May 10:00Tandas:2-2-1Club Smash PadelAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1Club Smash PadelActa"
         },
         {
           "grupo_id": "31266",
@@ -32146,7 +32146,7 @@
           "equipo_local": "+ PADEL SANTANDER D",
           "equipo_visitante": "CAMARGO C",
           "estado": "desconocido",
-          "cell_text": "23 May 11:00Tandas:2-3Go fitAlineaciones"
+          "cell_text": "0/0Tandas:2-3Go fitActa"
         },
         {
           "grupo_id": "31267",
@@ -32735,7 +32735,7 @@
           "equipo_local": "PADEL X5 C",
           "equipo_visitante": "T3 PADEL A",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:3-2X5 CiceroAlineaciones"
+          "cell_text": "3/2Acta"
         },
         {
           "grupo_id": "31267",
@@ -33816,7 +33816,7 @@
           "equipo_local": "MONTEVERDE H",
           "equipo_visitante": "T3 PADEL B",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:2-3Club de Tenis y P�del MonteverdeAlineaciones"
+          "cell_text": "0/0Tandas:2-3Club de Tenis y P�del MonteverdeActa"
         },
         {
           "grupo_id": "31268",
@@ -34172,7 +34172,7 @@
           "equipo_local": "PENAGOS B",
           "equipo_visitante": "NUEVO SAN LAZARO - PONTEJOS B",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:2-2-1Pistas de p�del Penagos. 39627. La Helguera.Alineaciones"
+          "cell_text": "3/2Acta"
         },
         {
           "grupo_id": "31268",
@@ -35031,7 +35031,7 @@
           "equipo_local": "P.A.G. ASTILLERO GUARNIZO B",
           "equipo_visitante": "MONTEVERDE J - LOPEZ RESTEGUI",
           "estado": "desconocido",
-          "cell_text": "23 May 11:00Tandas:4-1ASTILLEROAlineaciones"
+          "cell_text": "0/0Tandas:4-1ASTILLEROActa"
         },
         {
           "grupo_id": "31269",
@@ -35221,8 +35221,12 @@
           "grupo_letra": "B",
           "equipo_local": "C.D. SALAS C",
           "equipo_visitante": "CIRCULO DE RECREO C",
-          "estado": "desconocido",
-          "cell_text": "22 May 18:00Tandas:2-2-1Centro Deportivo SalasAlineaciones"
+          "resultado_local": 2,
+          "resultado_visitante": 3,
+          "resultado": "2/3",
+          "url_resultado": "https://federacioncantabradepadel.com/Liga_Resultado?id=28074&partido=69&grupo=31269",
+          "url_acta": "https://federacioncantabradepadel.com/Liga_AccesoActa?id=28074&partido=69&grupo=31269",
+          "estado": "jugado"
         },
         {
           "grupo_id": "31269",
@@ -35368,7 +35372,7 @@
           "equipo_local": "LEGACY B - AMOS 10 INMOBILIARIA",
           "equipo_visitante": "G6 T - ECLIPSE SANTANDER",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:3-2Legacy padel san felicesAlineaciones"
+          "cell_text": "4/1Acta"
         },
         {
           "grupo_id": "31269",
@@ -35694,7 +35698,7 @@
           "equipo_local": "VELARDE C.P.",
           "equipo_visitante": "PADEL X5 D",
           "estado": "desconocido",
-          "cell_text": "23 May 10:00Tandas:2-2-1Complejo deportivo La marucaAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1Complejo deportivo La marucaActa"
         },
         {
           "grupo_id": "31269",
@@ -36056,12 +36060,12 @@
           "puntos": 9,
           "partidos_disputados": 75,
           "partidos_ganados": 38,
-          "sets_favor": 85,
-          "sets_contra": 82,
-          "average_sets": 3,
-          "juegos_favor": 758,
-          "juegos_contra": 751,
-          "average_juegos": 7
+          "sets_favor": 92,
+          "sets_contra": 85,
+          "average_sets": 7,
+          "juegos_favor": 813,
+          "juegos_contra": 791,
+          "average_juegos": 22
         },
         {
           "grupo_id": "31269",
@@ -36072,16 +36076,16 @@
           "posicion": 5,
           "equipo": "CIRCULO DE RECREO C",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158086&Id=28074",
-          "enfrentamientos_disputados": 15,
-          "puntos": 7,
-          "partidos_disputados": 75,
-          "partidos_ganados": 33,
-          "sets_favor": 76,
-          "sets_contra": 92,
-          "average_sets": -16,
-          "juegos_favor": 704,
-          "juegos_contra": 779,
-          "average_juegos": -75
+          "enfrentamientos_disputados": 16,
+          "puntos": 8,
+          "partidos_disputados": 80,
+          "partidos_ganados": 36,
+          "sets_favor": 83,
+          "sets_contra": 97,
+          "average_sets": -14,
+          "juegos_favor": 763,
+          "juegos_contra": 830,
+          "average_juegos": -67
         },
         {
           "grupo_id": "31269",
@@ -36092,16 +36096,16 @@
           "posicion": 6,
           "equipo": "C.D. SALAS C",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158039&Id=28074",
-          "enfrentamientos_disputados": 15,
+          "enfrentamientos_disputados": 16,
           "puntos": 7,
-          "partidos_disputados": 75,
-          "partidos_ganados": 35,
-          "sets_favor": 81,
-          "sets_contra": 91,
-          "average_sets": -10,
-          "juegos_favor": 780,
-          "juegos_contra": 810,
-          "average_juegos": -30
+          "partidos_disputados": 80,
+          "partidos_ganados": 37,
+          "sets_favor": 86,
+          "sets_contra": 98,
+          "average_sets": -12,
+          "juegos_favor": 831,
+          "juegos_contra": 869,
+          "average_juegos": -38
         },
         {
           "grupo_id": "31269",
@@ -36130,26 +36134,6 @@
           "categoria": 6,
           "grupo_letra": "B",
           "posicion": 8,
-          "equipo": "G6 T - ECLIPSE SANTANDER",
-          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158088&Id=28074",
-          "enfrentamientos_disputados": 15,
-          "puntos": 1,
-          "partidos_disputados": 75,
-          "partidos_ganados": 16,
-          "sets_favor": 38,
-          "sets_contra": 124,
-          "average_sets": -86,
-          "juegos_favor": 500,
-          "juegos_contra": 857,
-          "average_juegos": -357
-        },
-        {
-          "grupo_id": "31269",
-          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO B",
-          "genero": "M",
-          "categoria": 6,
-          "grupo_letra": "B",
-          "posicion": 9,
           "equipo": "PADEL X5 D",
           "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158066&Id=28074",
           "enfrentamientos_disputados": 15,
@@ -36162,6 +36146,26 @@
           "juegos_favor": 554,
           "juegos_contra": 880,
           "average_juegos": -326
+        },
+        {
+          "grupo_id": "31269",
+          "grupo_label": "6ª CATEGORÍA MASCULINA - GRUPO B",
+          "genero": "M",
+          "categoria": 6,
+          "grupo_letra": "B",
+          "posicion": 9,
+          "equipo": "G6 T - ECLIPSE SANTANDER",
+          "equipo_url": "https://federacioncantabradepadel.com/Liga_DetalleEquipo?IdEquipo=158088&Id=28074",
+          "enfrentamientos_disputados": 15,
+          "puntos": 1,
+          "partidos_disputados": 75,
+          "partidos_ganados": 16,
+          "sets_favor": 41,
+          "sets_contra": 131,
+          "average_sets": -90,
+          "juegos_favor": 540,
+          "juegos_contra": 912,
+          "average_juegos": -372
         }
       ]
     },
@@ -36996,7 +37000,7 @@
           "equipo_local": "PADEL MIES DEL CORRO C - PROTECMA",
           "equipo_visitante": "P.A.G. ASTILLERO GUARNIZO D",
           "estado": "desconocido",
-          "cell_text": "23 May 10:30Tandas:3-2Solares (Medio Cudeyo)Alineaciones"
+          "cell_text": "0/0Tandas:3-2Solares (Medio Cudeyo)Acta"
         },
         {
           "grupo_id": "31270",
@@ -37840,7 +37844,7 @@
           "equipo_local": "RACKET SPORT I - CABRITU",
           "equipo_visitante": "G6 R - LOS PUMAS",
           "estado": "desconocido",
-          "cell_text": "22 May 20:00Tandas:3-2Racket Sport CenterAlineaciones"
+          "cell_text": "0/0Tandas:3-2Racket Sport CenterActa"
         },
         {
           "grupo_id": "31369",
@@ -38279,7 +38283,7 @@
           "equipo_local": "SMASH PADEL I - SENOR",
           "equipo_visitante": "EL TEMPLO F",
           "estado": "desconocido",
-          "cell_text": "23 May 10:00Tandas:2-2-1Smash P�del ClubAlineaciones"
+          "cell_text": "0/0Tandas:2-2-1Smash P�del ClubActa"
         },
         {
           "grupo_id": "31369",
@@ -40696,7 +40700,7 @@
   "resumen": {
     "total_grupos": 38,
     "total_partidos": 2292,
-    "partidos_jugados": 2256,
+    "partidos_jugados": 2257,
     "partidos_pendientes": 0,
     "total_equipos_clasificacion": 301
   }
